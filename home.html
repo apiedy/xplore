@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+  	<title>Xplore|Home</title>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  	<!-- jquery -->
+  	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  	<!-- Bootstrap -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  	<!-- Open sans -->
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  	<!-- My Styles & scripts -->
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+  	<script type="text/javascript" src="xplore-script.js"></script>
+    <script type="text/javascript" src="custom validations.js"></script>
+  </head>
+
+  <body>
+  	<div class="menu">
+
+        <!-- Menu Close icon -->
+        <div class="icon-close">
+          <img src="Images/close.png">
+        </div>
+
+        <!-- Menu -->
+        <ul>
+          <li><a href="about us.html">About</a></li>
+          <span id="menu-signup"><li>Sign Up</li></span>
+          <span id="menu-login"><li>Login</li></span>
+          <li><a href="hire.html">Hire</a></li>
+          <span id="menu-contact"><li>Contact Us</li></span>
+          <span id="cr"><p>Designed with love in India, by  <span id="crs">Team Xplore.</span><br/>
+          &#169 2016 Copyright. <span id="crs">Backbencher</span>'<span id="crs">s Tech. Inc.</span></p></span>
+        </ul>
+    </div>
+
+      <div class="icon-menu">
+          <p class="pull-left"><i class="fa fa-bars"></i>Menu</p>
+      </div>
+      <div id="bgwrap">
+        <video id="bg-video" autoplay loop muted poster="Images/Lighthouse.jpg">
+          <source src="Videos/time lapse.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="content">
+        <h1>xplore</h1>
+      </div>
+      <div class="overlay">
+        <img id="pop-close" src="Images/close.png">
+      </div>
+      <div class="popup" id="login">
+        <form id="lin" name="login" action="hire.html" method="POST">
+          <center><span class="glyphicon glyphicon-user"></span></center>
+          <input class="sres" type="email" placeholder="Email-Id"><br/><br/>
+          <input class="sres" type="password" placeholder="Password"><br/><br/>
+          <input type="submit" class="btn btn-primary" value="Login" name="login" />
+        </form>
+        <p>Not yet registered? <span id="frm-sin-link">Sign Up</span></p>
+      </div>
+      <div class="popup" id="signup">
+        <form id="sin" name="signup" action="about us.html" method="POST">
+          <strong>Name</strong><br/>
+          <input class="fres"type="text" placeholder="First" required />
+          <input class="fres" type="text" placeholder="Last" required /><br/><br/>
+          <strong>E-mail</strong><br/>
+          <input class="sres" type="email" placeholder="Email-Id" required /><br/><br/>
+          <strong>Create a password</strong>
+          <input class="sres" id="p1" name="pass" type="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" title="Should contain atleast 1 lower case letter, 1 upper case letter and 1 digit; and be 8 characters long."/><br/><br/>
+          <strong>Confirm password</strong>
+          <input class="sres" id="p2" name="pass1" type="password" required pattern title="Please enter the same pasword as above."/><br/><br/>
+          <input type="submit" class="btn btn-primary" value="Sign-Up" name="sign-up" />
+        </form>
+        <p>Already registered? <span id="frm-lin-link">Login now</span></p>
+      </div>
+      <div class="popup" id="contact-us">
+        <form id="cont" name="contactus" action="home.html" method="POST">
+          <input class="sres" type="text" name="name" placeholder="Name" required /><br/><br/>
+          <input class="sres" type="text" name="mobile" placeholder="Mobile" required /><br/><br/>
+          <input class="sres" type="email" name="mail" placeholder="Email-Id" required /><br/><br/>
+          <textarea class="sres" placeholder="Enter your query" required /></textarea><br/><br/>
+          <input type="submit" class="btn btn-primary" value="Submit" name="submit" />
+        </form>
+        <p>Mail us your query and we'll get back to you.</p>
+      </div>
+  </body>
+
+</html>
