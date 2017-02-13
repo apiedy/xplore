@@ -3,6 +3,9 @@ Xplore is a travel website where you can employ their services by hiring their t
 
 `NOTE` : This was designed as part of my college assignments and will be expanded hereforth.
 
+### Running the site
+Download the folder structure and execute the `home.html` file to launch the site and navigate through it for a glimpse.
+
 ### Tech Involved
 - Front End : Javascript, jQuery
 - UI : Bootstrap
